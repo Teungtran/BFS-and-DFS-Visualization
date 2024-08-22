@@ -41,7 +41,7 @@ def dfs(graph, start_node, closed = None):
                 # mô hình thác nước ( dfs after dfs after dfs and so on)
                 order.extend(dfs(graph, node, closed))
     return order
-# tham khảo
+
 # visualization
 def visual_search(order, title, G, pos):
     plt.figure(figsize = (13,8), dpi =100)
